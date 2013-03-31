@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+{% if not session.logged_in %}
+<h1 style="font-size: 50px;font-family: arial black;padding-bottom: 10px;">Login</h1>
+ <hr/>
+ <p>Wait, haven't you been here before?</p>
+ <hr/>
+ <form method="POST">
+ <input type="text" id="email" name="email" placeholder="Enter your email here" />
+ <hr/>
+ <input type="password" id="password" name="password" placeholder="Enter your password" />
+ <hr/>
+ <input type="submit" id="submit" value="Login" class="btn btn-large btn-inverse"/>
+ <a href="{{ url_for('register') }}" id="register" class="btn btn-large btn-primary" style="padding: 10px;font-size: 16px;">New? Apply Now!</a>
+ </form>
+{% else %}
+<h1 style="font-size: 50px;font-family: arial black;padding-bottom: 10px;">Rendezvous 2012</h1>
+ <hr/>
+ <p>Welcome! {{ session.name }}</p>
+ <hr/>
+ <p>Rendezvous 2012 is here and in order to get things running smoothly we need to ensure that you are registered for events. You can also join us as a visitor. Feel free to go the the <a href="{{ url_for('panel') }}">Control Panel</a> if you want to know what events are going on</p>
+
+{% endif %}
+{% endblock %}

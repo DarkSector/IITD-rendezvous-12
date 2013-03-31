@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <h1>Welcome to Rendezvous 2012 Registration Gateway.</h1> <hr/>
+
+
+ <form method="POST">
+ <input type="text" id="email" name="email" placeholder="Your email? e.g. batman@batmail.com" />
+ <hr/>
+ <input type="text" id="phone" name="phone" placeholder="Hey, what's your number? e.g. 9857990103" />
+ <hr/>
+<input type="text" id="name" name="name" placeholder="Your name?  e.g Bruce Wayne" />
+ <hr/>
+<input type="text" name="sex" id="sex" placeholder="Male / Female / Other" />
+<hr/>
+<input type="text" name="college" id="college" placeholder="Name of your college/university" />
+ <hr/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" id="submit" class="btn btn-large btn-inverse">Done? Sweet!</button>
+ <!-- <input type="submit" id="submit" value="Done already? Sweet!" class="btn btn-large btn-inverse"/>-->
+ </form>
+{% endblock %}

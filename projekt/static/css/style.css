@@ -1,0 +1,66 @@
+body {
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+	  
+	  .bbtop
+	  {
+	  height: 7px;
+      background: url('../img/bg.png') repeat;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 999;
+	  }
+	  .bbottom
+	  {
+	  height: 5px;
+      background-color: black;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 999;
+      }
+	  footer
+	  {
+	  width: 100%;left: 0;bottom: 0;
+	  padding-top: 15px;position: fixed;background: white;z-index: 2;padding-bottom: 15px;
+	  border-top: 1px solid #ccc;
+	  }
+	  footer p { margin-left: 30px; }
+	  .container
+	  {
+	  width: 100% !important;margin: 0px;
+	  }
+	  #leftside{ width: 300px;border-right: 1px solid #ccc;position: fixed;top: 0;left: 0;bottom: 0;min-height: 600px;margin-left: 0px; }
+	  #leftside h1{ padding-top: 60px;padding-left: 30px;font-size: 40px;font-weight: bold;font-family: arial black; }
+	  #leftside p{ padding: 10px 30px;width: 240px; }
+	  #leftside img{width: 50px;padding-left: 30px;}
+	  #leftside a{ margin-left: 30px;width: 200px;margin-top: 5px; }
+	  
+	  #rightside{ min-height: 600px;margin-left: 300px;margin-bottom: 50px; }
+	  #rightside{ min-height: 600px; }
+	  #rightside h1{ padding-top: 60px;padding-left: 30px;font-size: 30px; }
+	  #rightside p{ padding: 10px 30px;padding-top: 10px;width: 880px; }
+	  #rightside form input[type="text"]:focus,#rightside form input[type="password"]:focus 
+	  { 
+	  border-left: 6px solid #3283d4;padding-left: 24px;
+	  } 
+	  #rightside form input[type="text"],#rightside form input[type="password"] 
+	  { 
+	  padding: 10px 30px;font-size: 20px;width: 90%;background: transparent;border: none;box-shadow: none; 
+	  } 
+	  #rightside form input[type="submit"] { padding: 10px;font-size: 16px;width: auto;margin-left: 30px; }
+	  #rightside ul {
+	   list-style-type: none;margin: 0px;
+	   }
+	  #rightside .event-list li{
+	  border-top: 1px solid #ddd;box-shadow: inset 0 1px #E3E3E3;-webkit-box-shadow: inset 0 1px #E3E3E3;padding-bottom: 15px;
+	  }
+	  #rightside ul .info{ padding: 5px 30px !important;font-style:italic;margin-bottom: 0px; }
+	  #rightside ul h2{ padding: 10px 30px !important;padding-top: 20px !important; }
+	  

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1 style="font-size: 50px;font-family: arial black;padding-bottom: 10px;">Control panel</h1>
+ <hr/>
+{% if user.virgin == "Yes" %}
+ <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi {{session.name}}! Looks like this is the first time you've actually activated your panel. You might want to change your password now.</h5>
+ <hr/>
+ <form method="POST">
+ <input type="password" id="password" name="password" placeholder="Enter your new password here" />
+ <hr/>
+ <input type="password" id="password" name="confirmpassword" placeholder="Second time's the charm: Enter your password again" />
+ <hr/>
+ <input type="submit" id="submit" value="Change my password" class="btn btn-large btn-inverse"/>
+ <p>If you have to change the password again, you will have to email us. So make sure you get this thing right, the first time.</p>
+ </form>
+{% else %}
+<h2>Get your entry token here.</h2>
+{% endif %}
+{% endblock %}
